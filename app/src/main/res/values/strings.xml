@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ImageSearcher</string>
+    <string name="preferences_file">Preference File</string>
+    <string name="dialog_preview_title">Hey</string>
+    <string name="dialog_preview_message">Do you want to open this image?</string>
+    <string name="dialog_generic_yes">Yes</string>
+    <string name="dialog_generic_not_yet">Not yet</string>
+    <string name="dialog_error_title">Warning!</string>
+    <string name="dialog_generic_try_reconnecting">Try reconnecting</string>
+    <string name="dialog_generic_exit">Exit</string>
+    <string name="dialog_error_message">There appears to be an error when fetching data</string>
+    <string name="search_hint">Search</string>
+    <string name="photo_stats_downloads_accessibility">downloads</string>
+    <string name="photo_stats_comments_accessibility">comments</string>
+    <string name="photo_stats_likes_accessibility">likes</string>
+    <string name="photo_stats_views_accessibility">views</string>
+    <string name="generic_back_accessibility">back</string>
+    <string name="search_icon_accessibility">Search Icon</string>
+    <string name="detail_metadata_author">Shot by: %1$s</string>
+</resources>
