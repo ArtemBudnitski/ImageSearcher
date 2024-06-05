@@ -40,11 +40,12 @@ class DetailScreenViewModel @Inject constructor(
                             comments = convertorHelper.convert(data.comments),
                             download = convertorHelper.convert(data.downloads),
                             photoUrl = data.largeImageURL,
-                            tags = convertorHelper.convert(data.tags)
+                            tags = convertorHelper.convert(data.tags),
+                            isDataError = false
                         )
                 }
             } catch (e: Exception) {
-                //TODO dodaj flage do uistate i ja tu ustaw zeby pokazac jakis error w UI
+                _uiState.value = _uiState.value.copy(isDataError = true)
             }
         }
     }

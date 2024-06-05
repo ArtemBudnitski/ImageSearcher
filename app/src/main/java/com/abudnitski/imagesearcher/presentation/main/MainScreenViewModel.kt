@@ -24,7 +24,7 @@ class MainScreenViewModel @Inject constructor(
 
     private fun load(searchText: String) {
         _uiState.value = _uiState.value.copy(isDataLoading = true, query = searchText)
-        viewModelScope.launch(Dispatchers.IO) {//main
+        viewModelScope.launch(Dispatchers.Main) {
             try {
                 val data = repo.getAllPhotos(searchText)
                 _uiState.value =
@@ -57,4 +57,4 @@ class MainScreenViewModel @Inject constructor(
 
 }
 
-const val INITIAL_QUERY = "fruits"
+const val INITIAL_QUERY = "" // for first init search:)

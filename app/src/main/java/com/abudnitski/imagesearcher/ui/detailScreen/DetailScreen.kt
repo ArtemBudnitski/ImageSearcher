@@ -32,6 +32,8 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import com.abudnitski.imagesearcher.R
 import com.abudnitski.imagesearcher.presentation.detail.DetailScreenUiState
 import com.abudnitski.imagesearcher.presentation.detail.DetailScreenViewModel
+import com.abudnitski.imagesearcher.ui.common.AlertDialogComponent
+import com.abudnitski.imagesearcher.ui.common.LoadingIndicator
 
 @Composable
 fun DetailScreen(onBackClick: () -> Unit) {
@@ -58,17 +60,21 @@ fun DetailScreen(onBackClick: () -> Unit) {
             Spacer(modifier = Modifier.weight(4f))
         }
 
-        Box(modifier = Modifier.fillMaxSize()) {
-            ElevatedCard(
-                modifier = Modifier
-                    .wrapContentWidth()
-                    .align(Alignment.Center)
-                    .padding(horizontal = 24.dp),
-                shape = RoundedCornerShape(15.dp)
-            ) {
-                LargePhoto(detailScreenUiState)
-                Metadata(detailScreenUiState)
-                PhotoStats(detailScreenUiState)
+        if (detailScreenUiState.isDataError){
+            LoadingIndicator()
+        }else{
+            Box(modifier = Modifier.fillMaxSize()) {
+                ElevatedCard(
+                    modifier = Modifier
+                        .wrapContentWidth()
+                        .align(Alignment.Center)
+                        .padding(horizontal = 24.dp),
+                    shape = RoundedCornerShape(15.dp)
+                ) {
+                    LargePhoto(detailScreenUiState)
+                    Metadata(detailScreenUiState)
+                    PhotoStats(detailScreenUiState)
+                }
             }
         }
     }

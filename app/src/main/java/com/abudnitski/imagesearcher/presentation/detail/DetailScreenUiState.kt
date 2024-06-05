@@ -8,5 +8,6 @@ data class DetailScreenUiState(
     val id: String = "",
     val user: String = "",
     val tags: String = "",
-    val photoUrl: String = ""
+    val photoUrl: String = "",
+    val isDataError: Boolean = false
 )
