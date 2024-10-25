@@ -57,4 +57,4 @@ class MainScreenViewModel @Inject constructor(
 
 }
 
-const val INITIAL_QUERY = "" // for first init search:)
+const val INITIAL_QUERY = "fruits" // for first init search:)
