@@ -1,6 +1,9 @@
 ### README.md
 
 ---
+| Main Screen | Detail Screen |
+|-------------|---------------|
+| ![mainIS](https://github.com/user-attachments/assets/c882cb77-e74a-42ff-814e-abbe9c9e3792)| ![detailIS](https://github.com/user-attachments/assets/49a41ac0-b39b-42e5-bf0f-c5a689cf77e4)|
 
 #### **PL:**
 
