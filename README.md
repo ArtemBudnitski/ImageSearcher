@@ -20,7 +20,6 @@ Aplikacja na Androida umożliwia użytkownikom wyszukiwanie obrazów za pomocą 
   - **Coil** – ładowanie obrazów
   - **Hilt** – Dependency Injection
   - **Coroutines** – zarządzanie asynchronicznością
-- **Testowanie**: Testy jednostkowe i zintegrowane dla kluczowych funkcjonalności
 
 ## Funkcjonalności
 
@@ -53,7 +52,6 @@ This Android application enables users to search for images using the Pixabay AP
   - **Coil** – image loading
   - **Hilt** – Dependency Injection
   - **Coroutines** – async management
-- **Testing**: Unit and integration tests for key functionalities
 
 ## Features
 
